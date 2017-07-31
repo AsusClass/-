@@ -1,0 +1,11 @@
+f = open('''\\Users\\Administrator\\Desktop\\编程题目\\50道练手题.txt''','r',encoding='utf-8')
+
+lines = []
+for line in f.readlines():
+	if not line.split() :
+		continue
+	lines.append(line)
+str = ''.join(lines)
+f.close()
+f = open('''\\Users\\Administrator\\Desktop\\编程题目\\50道练手题.txt''','w',encoding='utf-8')
+f.write(str)
